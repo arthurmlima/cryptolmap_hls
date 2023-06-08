@@ -1,0 +1,1159 @@
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 476, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 372, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b111
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 348, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 310, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 534, Column: 9 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            blk
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 476, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 372, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b111
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 348, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 310, Column: 9 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Adding '''
+  - Name:            b0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 534, Column: 9 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Adding '''
+  - Name:            blk
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 475, Column: 29 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 371, Column: 25 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b111
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 347, Column: 25 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 309, Column: 14 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            b0
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 533, Column: 14 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            blk
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 554, Column: 35 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_554_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 314, Column: 13 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        LOOP_SHA256_GEN_ONE_FULL_BLK
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 614, Column: 0 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_SHA256_EMIT_H256
+  - String:          ''' ('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:718:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::sha256Digest<256>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 526, Column: 0 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_554_3
+  - String:          ''' ('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:554:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::generateMsgSchedule'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 290, Column: 0 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_SHA256_GEN_ONE_FULL_BLK
+  - String:          ''' ('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:314:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 290, Column: 0 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_SHA256_GEN_L_ONLY_BLK
+  - String:          ''' ('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:478:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing'
+  - String:          ''' completely with a factor of '
+  - Factor:          '14'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 290, Column: 0 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        LOOP_SHA256_GEN_PAD_13_ZEROS
+  - String:          ''' ('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:354:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'xf::security::internal::preProcessing'
+  - String:          ''' completely with a factor of '
+  - Factor:          '13'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 614, Column: 0 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::security::internal::sha256_iter(unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&, hls::stream<unsigned int, 0>&, unsigned int&, unsigned int const*, short)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 576, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void xf::security::internal::sha256Digest<256>(hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 614, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isinfIfEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isinf<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIfEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 351, Column: 0 }
+Function:        _ZNK9fp_structIfE8to_floatEv.56.66.76.109
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::data() const (.59.69.79.112)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 338, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_float() const (.56.66.76.109)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 351, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 375, Column: 0 }
+Function:        _ZNK9fp_structIfE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::to_float() const (.56.66.76.109)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 351, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<float>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 375, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 159, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIfE19log_range_reductionILi39EEE9ap_ufixedILi39ELin17EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi65ELi9ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 39, 41>(ap_ufixed<39, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<41, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<39, -17, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<float>::log_range_reduction<39>(ap_ufixed<39, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 159, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 159, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIfE19log_range_reductionILi39EEE9ap_ufixedILi39ELin17EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi65ELi9ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 41, 44>(ap_ufixed<41, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<44, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<39, -17, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<float>::log_range_reduction<39>(ap_ufixed<39, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 159, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 159, Column: 0 }
+Function:        _ZN10pow_reduce10pow_traitsIfE19log_range_reductionILi39EEE9ap_ufixedILi39ELin17EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_IXT_ELin4ELS4_5ELS5_3ELi0EER8ap_fixedILi65ELi9ELS4_5ELS5_3ELi0EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void pow_reduce::log_range_reduce<ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 44, 39>(ap_ufixed<44, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<39, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ap_ufixed<39, -17, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<float>::log_range_reduction<39>(ap_ufixed<39, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 159, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::fp_struct(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 312, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<float>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 345, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isinf<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<float>(float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_ufixed<39, -17, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<float>::log_range_reduction<39>(ap_ufixed<39, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<65, 9, (ap_q_mode)5, (ap_o_mode)3, 0>&)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 159, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                   Line: 321, Column: 0 }
+Function:        _ZN10pow_reduce11pow_genericIfEET_S1_S1_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'pow_reduce::pow_traits<float>::exp_Z1P_m_1(ap_ufixed<18, -9, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 185, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float pow_reduce::pow_generic<float>(float, float)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h, 
+                       Line: 321, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 523, Column: 0 }
+Function:        _ZNK9fp_structIdE9to_doubleEv.132.142.151.162
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::data() const (.135.145.154.165)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 504, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_double() const (.132.142.151.162)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 523, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                   Line: 538, Column: 0 }
+Function:        _ZNK9fp_structIdE7to_ieeeEv
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_double() const (.132.142.151.162)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 523, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 538, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_copysign<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                   Line: 10, Column: 0 }
+Function:        _Z16generic_copysignIdET_S0_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 538, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_copysign<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z13generic_isnanIdEiT_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z12generic_modfIdET_S0_PS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_modf<double>(double, double*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z12generic_modfIdET_S0_PS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'double generic_copysign<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_modf<double>(double, double*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z12generic_modfIdET_S0_PS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'int generic_isnan<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_modf<double>(double, double*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                   Line: 16, Column: 0 }
+Function:        _Z12generic_modfIdET_S0_PS0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::to_ieee() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 538, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_modf<double>(double, double*)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_modf.h, 
+                       Line: 16, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z12generic_fabsIdET_S0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'double generic_copysign<double>(double, double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_copysign.h, 
+                       Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'double generic_fabs<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c/fabsdouble.cpp, 
+                   Line: 7, Column: 0 }
+Function:        fabs
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'double generic_fabs<double>(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_fabs.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          fabs
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c/fabsdouble.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h', 
+                   Line: 71, Column: 0 }
+Function:        _ZSt3absd
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          fabs
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c/fabsdouble.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'std::abs(double)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h', 
+                       Line: 71, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IlL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::fp_struct(double)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 485, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'long generic_cast_IEEE754<long, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<long>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IlL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::mantissa() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 532, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'long generic_cast_IEEE754<long, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<long>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IlL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::expv() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 514, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'long generic_cast_IEEE754<long, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<long>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 12, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IlL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fp_struct<double>::__signbit() const'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
+                       Line: 541, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'long generic_cast_IEEE754<long, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<long>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                   Line: 116, Column: 0 }
+Function:        _Z20generic_cast_IEEE754IldET_T0_b
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'long generic_cast_IEEE754<long, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<long>::is_signed, bool>::type)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'long generic_cast_IEEE754<long, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                   Line: 56, Column: 0 }
+Function:        __hls_fptosi_double_i64
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'long generic_cast_IEEE754<long, double>(double, bool)'
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
+                       Line: 116, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          __hls_fptosi_double_i64
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 56, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+Function:        _Z6logmapRfS_RN3hls6streamINS0_4axisI9outStreamLm1ELm1ELm1EEELi0EEEiiiPm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          powf
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c/powfloat.cpp, 
+                       Line: 7, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'logmap(float&, float&, hls::stream<hls::axis<outStream, 1ul, 1ul, 1ul>, 0>&, int, int, int, unsigned long*)'
+    DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+Function:        _Z6logmapRfS_RN3hls6streamINS0_4axisI9outStreamLm1ELm1ELm1EEELi0EEEiiiPm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          modf
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/c/modfdouble.cpp, 
+                       Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'logmap(float&, float&, hls::stream<hls::axis<outStream, 1ul, 1ul, 1ul>, 0>&, int, int, int, unsigned long*)'
+    DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+Function:        _Z6logmapRfS_RN3hls6streamINS0_4axisI9outStreamLm1ELm1ELm1EEELi0EEEiiiPm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'std::abs(double)'
+    DebugLoc:        { File: '/tools/Xilinx/Vitis_HLS/2023.1/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h', 
+                       Line: 71, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'logmap(float&, float&, hls::stream<hls::axis<outStream, 1ul, 1ul, 1ul>, 0>&, int, int, int, unsigned long*)'
+    DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+Function:        _Z6logmapRfS_RN3hls6streamINS0_4axisI9outStreamLm1ELm1ELm1EEELi0EEEiiiPm
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          __hls_fptosi_double_i64
+    DebugLoc:        { File: /wrk/ci/prod/2023.1/hls_product/continuous/1026/2023.1/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
+                       Line: 56, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'logmap(float&, float&, hls::stream<hls::axis<outStream, 1ul, 1ul, 1ul>, 0>&, int, int, int, unsigned long*)'
+    DebugLoc:        { File: chls/sub_modules.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 620, Column: 0 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_E1K
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 371, Column: 25 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b111
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 533, Column: 14 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          blk
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 537, Column: 11 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          W
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 638, Column: 18 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          H
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 600, Column: 20 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 754, Column: 27 }
+Function:        _ZN2xf8security8internal10sha256_topILi64ELi256EEEvRN3hls6streamI7ap_uintIXT_EELi0EEERNS4_IS5_ILi64EELi0EEERNS4_IbLi0EEERNS4_IS5_IXT0_EELi0EEESD_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            blk_strm
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '512'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 39, Column: 22 }
+Function:        _Z15set_hash_streamRfS_RN3hls6streamI7ap_uintILi256EELi0EEERNS1_IbLi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_39_1
+  - String:          ' '
+  - LoopLoc:         'chls/sub_modules.cpp:39:22'
+  - String:          ' '
+  - Function:        'set_hash_stream(float&, float&, hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: chls/sub_modules.cpp, Line: 32, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 292, Column: 5 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_SHA256_GENENERATE_MAIN
+  - String:          ' '
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:292:5'
+  - String:          ' '
+  - Function:        'xf::security::internal::preProcessing(hls::stream<ap_uint<64>, 0>&, hls::stream<ap_uint<64>, 0>&, hls::stream<bool, 0>&, hls::stream<xf::security::internal::SHA256Block, 0>&, hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 290, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 506, Column: 23 }
+Function:        _ZN2xf8security8internal8dup_strmERN3hls6streamImLi0EEERNS3_IbLi0EEES5_S7_S5_S7_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_506_1
+  - String:          ' '
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:506:23'
+  - String:          ' '
+  - Function:        'xf::security::internal::dup_strm(hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 503, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 528, Column: 23 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_528_1
+  - String:          ' '
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:528:23'
+  - String:          ' '
+  - Function:        'xf::security::internal::generateMsgSchedule(hls::stream<xf::security::internal::SHA256Block, 0>&, hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 526, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 632, Column: 5 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        LOOP_SHA256_DIGEST_MAIN
+  - String:          ' '
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:632:5'
+  - String:          ' '
+  - Function:        'void xf::security::internal::sha256Digest<256>(hls::stream<unsigned long, 0>&, hls::stream<bool, 0>&, hls::stream<unsigned int, 0>&, hls::stream<ap_uint<256>, 0>&, hls::stream<bool, 0>&)'
+    DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                       Line: 614, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: chls/sub_modules.cpp, Line: 39, Column: 22 }
+Function:        _Z15set_hash_streamRfS_RN3hls6streamI7ap_uintILi256EELi0EEERNS1_IbLi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_39_1
+  - String:          '''('
+  - LoopLoc:         'chls/sub_modules.cpp:39:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 292, Column: 5 }
+Function:        _ZN2xf8security8internal13preProcessingERN3hls6streamI7ap_uintILi64EELi0EEES7_RNS3_IbLi0EEERNS3_INS1_11SHA256BlockELi0EEERNS3_ImLi0EEES9_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_SHA256_GENENERATE_MAIN
+  - String:          '''('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:292:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 506, Column: 23 }
+Function:        _ZN2xf8security8internal8dup_strmERN3hls6streamImLi0EEERNS3_IbLi0EEES5_S7_S5_S7_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_506_1
+  - String:          '''('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:506:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 528, Column: 23 }
+Function:        _ZN2xf8security8internal19generateMsgScheduleERN3hls6streamINS1_11SHA256BlockELi0EEERNS3_ImLi0EEERNS3_IbLi0EEERNS3_IjLi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_528_1
+  - String:          '''('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:528:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp, 
+                   Line: 632, Column: 5 }
+Function:        _ZN2xf8security8internal12sha256DigestILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_IjLi0EEERNS4_I7ap_uintIXT_EELi0EEES8_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        LOOP_SHA256_DIGEST_MAIN
+  - String:          '''('
+  - LoopLoc:         '/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:632:5'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...

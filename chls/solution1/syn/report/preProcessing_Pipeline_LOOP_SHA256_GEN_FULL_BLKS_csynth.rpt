@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vitis HLS Report for 'preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS'
+================================================================
+* Date:           Wed Jun  7 23:11:35 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        chls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  11.00 ns|  4.802 ns|     2.97 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        2|       11|  22.000 ns|  0.121 us|    2|   11|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                             |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |          Loop Name          |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- LOOP_SHA256_GEN_FULL_BLKS  |        0|        9|         9|          9|         16|  0 ~ 1|       yes|
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     138|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|     117|    -|
+|Register         |        -|     -|     518|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     518|     255|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |j_2_fu_186_p2                      |         +|   0|  0|  65|          58|           1|
+    |ap_block_pp0_stage0_01001          |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage2_11001          |       and|   0|  0|   2|           1|           1|
+    |icmp_ln305_fu_181_p2               |      icmp|   0|  0|  65|          58|          58|
+    |ap_block_state10_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                      |       xor|   0|  0|   2|           1|           2|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Total                              |          |   0|  0| 138|         120|          64|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  54|         10|    1|         10|
+    |ap_done_int                  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |   9|          2|    1|          2|
+    |blk_strm_blk_n               |   9|          2|    1|          2|
+    |j_fu_80                      |   9|          2|   58|        116|
+    |msg_strm_blk_n               |   9|          2|    1|          2|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 117|         24|   65|        138|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                    |   9|   0|    9|          0|
+    |ap_done_reg                  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1      |   1|   0|    1|          0|
+    |conv15_1_1_reg_371           |   8|   0|    8|          0|
+    |conv15_1_2_reg_376           |   8|   0|    8|          0|
+    |conv15_1_3_reg_366           |   8|   0|    8|          0|
+    |conv15_1_reg_331             |   8|   0|    8|          0|
+    |conv15_2_1_reg_411           |   8|   0|    8|          0|
+    |conv15_2_2_reg_416           |   8|   0|    8|          0|
+    |conv15_2_3_reg_406           |   8|   0|    8|          0|
+    |conv15_2_reg_336             |   8|   0|    8|          0|
+    |conv15_3_1_reg_451           |   8|   0|    8|          0|
+    |conv15_3_2_reg_456           |   8|   0|    8|          0|
+    |conv15_3_3_reg_446           |   8|   0|    8|          0|
+    |conv15_3_reg_326             |   8|   0|    8|          0|
+    |conv15_4_1_reg_491           |   8|   0|    8|          0|
+    |conv15_4_2_reg_496           |   8|   0|    8|          0|
+    |conv15_4_3_reg_486           |   8|   0|    8|          0|
+    |conv15_5_1_reg_531           |   8|   0|    8|          0|
+    |conv15_5_2_reg_536           |   8|   0|    8|          0|
+    |conv15_5_3_reg_526           |   8|   0|    8|          0|
+    |conv15_6_1_reg_571           |   8|   0|    8|          0|
+    |conv15_6_2_reg_576           |   8|   0|    8|          0|
+    |conv15_6_3_reg_566           |   8|   0|    8|          0|
+    |conv36_0_reg_341             |   8|   0|    8|          0|
+    |conv36_1_0_reg_381           |   8|   0|    8|          0|
+    |conv36_1_1_reg_391           |   8|   0|    8|          0|
+    |conv36_1_2_reg_396           |   8|   0|    8|          0|
+    |conv36_1_3_reg_386           |   8|   0|    8|          0|
+    |conv36_1_reg_351             |   8|   0|    8|          0|
+    |conv36_2_0_reg_421           |   8|   0|    8|          0|
+    |conv36_2_1_reg_431           |   8|   0|    8|          0|
+    |conv36_2_2_reg_436           |   8|   0|    8|          0|
+    |conv36_2_3_reg_426           |   8|   0|    8|          0|
+    |conv36_2_reg_356             |   8|   0|    8|          0|
+    |conv36_3_0_reg_461           |   8|   0|    8|          0|
+    |conv36_3_1_reg_471           |   8|   0|    8|          0|
+    |conv36_3_2_reg_476           |   8|   0|    8|          0|
+    |conv36_3_3_reg_466           |   8|   0|    8|          0|
+    |conv36_3_reg_346             |   8|   0|    8|          0|
+    |conv36_4_0_reg_501           |   8|   0|    8|          0|
+    |conv36_4_1_reg_511           |   8|   0|    8|          0|
+    |conv36_4_2_reg_516           |   8|   0|    8|          0|
+    |conv36_4_3_reg_506           |   8|   0|    8|          0|
+    |conv36_5_0_reg_541           |   8|   0|    8|          0|
+    |conv36_5_1_reg_551           |   8|   0|    8|          0|
+    |conv36_5_2_reg_556           |   8|   0|    8|          0|
+    |conv36_5_3_reg_546           |   8|   0|    8|          0|
+    |conv36_6_0_reg_581           |   8|   0|    8|          0|
+    |conv36_6_1_reg_591           |   8|   0|    8|          0|
+    |conv36_6_2_reg_596           |   8|   0|    8|          0|
+    |conv36_6_3_reg_586           |   8|   0|    8|          0|
+    |empty_84_reg_361             |   8|   0|    8|          0|
+    |empty_85_reg_401             |   8|   0|    8|          0|
+    |empty_86_reg_441             |   8|   0|    8|          0|
+    |empty_87_reg_481             |   8|   0|    8|          0|
+    |empty_88_reg_521             |   8|   0|    8|          0|
+    |empty_89_reg_561             |   8|   0|    8|          0|
+    |empty_reg_321                |   8|   0|    8|          0|
+    |j_fu_80                      |  58|   0|   58|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 518|   0|  518|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+--------------------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |                   Source Object                  |    C Type    |
++-------------------------+-----+-----+------------+--------------------------------------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|  preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS|  return value|
+|msg_strm_dout            |   in|   64|     ap_fifo|                                          msg_strm|       pointer|
+|msg_strm_num_data_valid  |   in|   16|     ap_fifo|                                          msg_strm|       pointer|
+|msg_strm_fifo_cap        |   in|   16|     ap_fifo|                                          msg_strm|       pointer|
+|msg_strm_empty_n         |   in|    1|     ap_fifo|                                          msg_strm|       pointer|
+|msg_strm_read            |  out|    1|     ap_fifo|                                          msg_strm|       pointer|
+|trunc_ln                 |   in|   58|     ap_none|                                          trunc_ln|        scalar|
+|blk_strm_din             |  out|  512|     ap_fifo|                                          blk_strm|       pointer|
+|blk_strm_num_data_valid  |   in|   14|     ap_fifo|                                          blk_strm|       pointer|
+|blk_strm_fifo_cap        |   in|   14|     ap_fifo|                                          blk_strm|       pointer|
+|blk_strm_full_n          |   in|    1|     ap_fifo|                                          blk_strm|       pointer|
+|blk_strm_write           |  out|    1|     ap_fifo|                                          blk_strm|       pointer|
++-------------------------+-----+-----+------------+--------------------------------------------------+--------------+
+

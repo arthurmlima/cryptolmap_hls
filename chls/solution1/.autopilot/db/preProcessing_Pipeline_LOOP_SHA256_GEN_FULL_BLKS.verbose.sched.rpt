@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vitis HLS Report for 'preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS'
+================================================================
+* Date:           Wed Jun  7 23:11:28 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        chls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  11.00 ns|  4.802 ns|     2.97 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        2|       11|  22.000 ns|  0.121 us|    2|   11|       no|
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |                             |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
+        |          Loop Name          |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+        |- LOOP_SHA256_GEN_FULL_BLKS  |        0|        9|         9|          9|         16|  0 ~ 1|       yes|
+        +-----------------------------+---------+---------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 9, depth = 10
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 1
+  Pipeline-0 : II = 9, D = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 12 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %blk_strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %msg_strm, void @empty_5, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %blk_strm, void @empty_5, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %trunc_ln" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:285]   --->   Operation 16 'read' 'trunc_ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.42ns)   --->   "%store_ln0 = store i58 0, i58 %j"   --->   Operation 17 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc"   --->   Operation 18 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.52>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%j_1 = load i58 %j" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 19 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (1.09ns)   --->   "%icmp_ln305 = icmp_eq  i58 %j_1, i58 %trunc_ln_read" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 20 'icmp' 'icmp_ln305' <Predicate = true> <Delay = 1.09> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.09> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (1.09ns)   --->   "%j_2 = add i58 %j_1, i58 1" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 21 'add' 'j_2' <Predicate = true> <Delay = 1.09> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.09> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln305 = br i1 %icmp_ln305, void %for.inc.split, void %do.end70.loopexit.exitStub" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 22 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln305 = store i58 %j_2, i58 %j" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 23 'store' 'store_ln305' <Predicate = (!icmp_ln305)> <Delay = 0.42>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 102 'ret' 'ret_ln0' <Predicate = (icmp_ln305)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.75>
+ST_3 : Operation 24 [1/1] (1.75ns)   --->   "%ll = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 24 'read' 'll' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%empty = trunc i64 %ll" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 25 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%conv15_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 26 'partselect' 'conv15_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%conv15_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 27 'partselect' 'conv15_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%conv15_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 28 'partselect' 'conv15_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%conv36_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 29 'partselect' 'conv36_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%conv36_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 30 'partselect' 'conv36_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%conv36_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 31 'partselect' 'conv36_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%conv36_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 32 'partselect' 'conv36_2' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.75>
+ST_4 : Operation 33 [1/1] (1.75ns)   --->   "%ll_1 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 33 'read' 'll_1' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%empty_84 = trunc i64 %ll_1" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 34 'trunc' 'empty_84' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%conv15_1_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 35 'partselect' 'conv15_1_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%conv15_1_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 36 'partselect' 'conv15_1_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%conv15_1_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 37 'partselect' 'conv15_1_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%conv36_1_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 38 'partselect' 'conv36_1_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%conv36_1_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 39 'partselect' 'conv36_1_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%conv36_1_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 40 'partselect' 'conv36_1_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%conv36_1_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_1, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 41 'partselect' 'conv36_1_2' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 1.75>
+ST_5 : Operation 42 [1/1] (1.75ns)   --->   "%ll_2 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 42 'read' 'll_2' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%empty_85 = trunc i64 %ll_2" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 43 'trunc' 'empty_85' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%conv15_2_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 44 'partselect' 'conv15_2_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%conv15_2_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 45 'partselect' 'conv15_2_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%conv15_2_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 46 'partselect' 'conv15_2_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%conv36_2_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 47 'partselect' 'conv36_2_0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%conv36_2_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 48 'partselect' 'conv36_2_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%conv36_2_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 49 'partselect' 'conv36_2_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%conv36_2_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_2, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 50 'partselect' 'conv36_2_2' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 1.75>
+ST_6 : Operation 51 [1/1] (1.75ns)   --->   "%ll_3 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 51 'read' 'll_3' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%empty_86 = trunc i64 %ll_3" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 52 'trunc' 'empty_86' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%conv15_3_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 53 'partselect' 'conv15_3_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "%conv15_3_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 54 'partselect' 'conv15_3_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%conv15_3_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 55 'partselect' 'conv15_3_2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%conv36_3_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 56 'partselect' 'conv36_3_0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 57 [1/1] (0.00ns)   --->   "%conv36_3_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 57 'partselect' 'conv36_3_3' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%conv36_3_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 58 'partselect' 'conv36_3_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 59 [1/1] (0.00ns)   --->   "%conv36_3_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_3, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 59 'partselect' 'conv36_3_2' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 1.75>
+ST_7 : Operation 60 [1/1] (1.75ns)   --->   "%ll_4 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 60 'read' 'll_4' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%empty_87 = trunc i64 %ll_4" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 61 'trunc' 'empty_87' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%conv15_4_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 62 'partselect' 'conv15_4_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%conv15_4_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 63 'partselect' 'conv15_4_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%conv15_4_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 64 'partselect' 'conv15_4_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%conv36_4_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 65 'partselect' 'conv36_4_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%conv36_4_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 66 'partselect' 'conv36_4_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 67 [1/1] (0.00ns)   --->   "%conv36_4_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 67 'partselect' 'conv36_4_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%conv36_4_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_4, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 68 'partselect' 'conv36_4_2' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 1.75>
+ST_8 : Operation 69 [1/1] (1.75ns)   --->   "%ll_5 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 69 'read' 'll_5' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_8 : Operation 70 [1/1] (0.00ns)   --->   "%empty_88 = trunc i64 %ll_5" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 70 'trunc' 'empty_88' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 71 [1/1] (0.00ns)   --->   "%conv15_5_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 71 'partselect' 'conv15_5_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 72 [1/1] (0.00ns)   --->   "%conv15_5_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 72 'partselect' 'conv15_5_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 73 [1/1] (0.00ns)   --->   "%conv15_5_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 73 'partselect' 'conv15_5_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 74 [1/1] (0.00ns)   --->   "%conv36_5_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 74 'partselect' 'conv36_5_0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 75 [1/1] (0.00ns)   --->   "%conv36_5_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 75 'partselect' 'conv36_5_3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 76 [1/1] (0.00ns)   --->   "%conv36_5_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 76 'partselect' 'conv36_5_1' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 77 [1/1] (0.00ns)   --->   "%conv36_5_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_5, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 77 'partselect' 'conv36_5_2' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 1.75>
+ST_9 : Operation 78 [1/1] (1.75ns)   --->   "%ll_6 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 78 'read' 'll_6' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_9 : Operation 79 [1/1] (0.00ns)   --->   "%empty_89 = trunc i64 %ll_6" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 79 'trunc' 'empty_89' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 80 [1/1] (0.00ns)   --->   "%conv15_6_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 80 'partselect' 'conv15_6_3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 81 [1/1] (0.00ns)   --->   "%conv15_6_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 81 'partselect' 'conv15_6_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 82 [1/1] (0.00ns)   --->   "%conv15_6_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 82 'partselect' 'conv15_6_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 83 [1/1] (0.00ns)   --->   "%conv36_6_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 83 'partselect' 'conv36_6_0' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 84 [1/1] (0.00ns)   --->   "%conv36_6_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 84 'partselect' 'conv36_6_3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 85 [1/1] (0.00ns)   --->   "%conv36_6_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 85 'partselect' 'conv36_6_1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 86 [1/1] (0.00ns)   --->   "%conv36_6_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_6, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 86 'partselect' 'conv36_6_2' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 4.80>
+ST_10 : Operation 87 [1/1] (0.00ns)   --->   "%specpipeline_ln306 = specpipeline void @_ssdm_op_SpecPipeline, i32 16, i32 0, i32 0, i32 0, void @empty_25" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:306]   --->   Operation 87 'specpipeline' 'specpipeline_ln306' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 88 [1/1] (0.00ns)   --->   "%speclooptripcount_ln307 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 1, i64 0" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:307]   --->   Operation 88 'speclooptripcount' 'speclooptripcount_ln307' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 89 [1/1] (0.00ns)   --->   "%specloopname_ln305 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 89 'specloopname' 'specloopname_ln305' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 90 [1/1] (1.75ns)   --->   "%ll_7 = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %msg_strm" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 90 'read' 'll_7' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32768> <FIFO>
+ST_10 : Operation 91 [1/1] (0.00ns)   --->   "%empty_90 = trunc i64 %ll_7" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 91 'trunc' 'empty_90' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 92 [1/1] (0.00ns)   --->   "%conv15_7_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 24, i32 31" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 92 'partselect' 'conv15_7_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 93 [1/1] (0.00ns)   --->   "%conv15_7_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 8, i32 15" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 93 'partselect' 'conv15_7_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 94 [1/1] (0.00ns)   --->   "%conv15_7_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 16, i32 23" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 94 'partselect' 'conv15_7_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 95 [1/1] (0.00ns)   --->   "%conv36_7_0 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 32, i32 39" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 95 'partselect' 'conv36_7_0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 96 [1/1] (0.00ns)   --->   "%conv36_7_3 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 56, i32 63" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 96 'partselect' 'conv36_7_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 97 [1/1] (0.00ns)   --->   "%conv36_7_1 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 40, i32 47" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 97 'partselect' 'conv36_7_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 98 [1/1] (0.00ns)   --->   "%conv36_7_2 = partselect i8 @_ssdm_op_PartSelect.i8.i64.i32.i32, i64 %ll_7, i32 48, i32 55" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316]   --->   Operation 98 'partselect' 'conv36_7_2' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 99 [1/1] (0.00ns)   --->   "%p_0 = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8, i8 %conv36_7_0, i8 %conv36_7_1, i8 %conv36_7_2, i8 %conv36_7_3, i8 %empty_90, i8 %conv15_7_1, i8 %conv15_7_2, i8 %conv15_7_3, i8 %conv36_6_0, i8 %conv36_6_1, i8 %conv36_6_2, i8 %conv36_6_3, i8 %empty_89, i8 %conv15_6_1, i8 %conv15_6_2, i8 %conv15_6_3, i8 %conv36_5_0, i8 %conv36_5_1, i8 %conv36_5_2, i8 %conv36_5_3, i8 %empty_88, i8 %conv15_5_1, i8 %conv15_5_2, i8 %conv15_5_3, i8 %conv36_4_0, i8 %conv36_4_1, i8 %conv36_4_2, i8 %conv36_4_3, i8 %empty_87, i8 %conv15_4_1, i8 %conv15_4_2, i8 %conv15_4_3, i8 %conv36_3_0, i8 %conv36_3_1, i8 %conv36_3_2, i8 %conv36_3_3, i8 %empty_86, i8 %conv15_3_1, i8 %conv15_3_2, i8 %conv15_3_3, i8 %conv36_2_0, i8 %conv36_2_1, i8 %conv36_2_2, i8 %conv36_2_3, i8 %empty_85, i8 %conv15_2_1, i8 %conv15_2_2, i8 %conv15_2_3, i8 %conv36_1_0, i8 %conv36_1_1, i8 %conv36_1_2, i8 %conv36_1_3, i8 %empty_84, i8 %conv15_1_1, i8 %conv15_1_2, i8 %conv15_1_3, i8 %conv36_0, i8 %conv36_1, i8 %conv36_2, i8 %conv36_3, i8 %empty, i8 %conv15_1, i8 %conv15_2, i8 %conv15_3" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:333]   --->   Operation 99 'bitconcatenate' 'p_0' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 100 [1/1] (3.05ns)   --->   "%write_ln333 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %blk_strm, i512 %p_0" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:333]   --->   Operation 100 'write' 'write_ln333' <Predicate = true> <Delay = 3.05> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.05> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 4097> <FIFO>
+ST_10 : Operation 101 [1/1] (0.00ns)   --->   "%br_ln305 = br void %for.inc" [/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305]   --->   Operation 101 'br' 'br_ln305' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 11.000ns, clock uncertainty: 2.970ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	'alloca' operation ('j') [4]  (0.000 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'j' [9]  (0.427 ns)
+
+ <State 2>: 1.520ns
+The critical path consists of the following:
+	'load' operation ('j', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305) on local variable 'j' [12]  (0.000 ns)
+	'add' operation ('j', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305) [14]  (1.093 ns)
+	'store' operation ('store_ln305', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305) of variable 'j', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:305 on local variable 'j' [94]  (0.427 ns)
+
+ <State 3>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [20]  (1.750 ns)
+
+ <State 4>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [29]  (1.750 ns)
+
+ <State 5>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [38]  (1.750 ns)
+
+ <State 6>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [47]  (1.750 ns)
+
+ <State 7>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [56]  (1.750 ns)
+
+ <State 8>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [65]  (1.750 ns)
+
+ <State 9>: 1.750ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [74]  (1.750 ns)
+
+ <State 10>: 4.802ns
+The critical path consists of the following:
+	fifo read operation ('ll', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) on port 'msg_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:316) [83]  (1.750 ns)
+	fifo write operation ('write_ln333', /home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:333) on port 'blk_strm' (/home/arthur/Vitis_Libraries/security/L1/include/xf_security/sha224_256.hpp:333) [93]  (3.052 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

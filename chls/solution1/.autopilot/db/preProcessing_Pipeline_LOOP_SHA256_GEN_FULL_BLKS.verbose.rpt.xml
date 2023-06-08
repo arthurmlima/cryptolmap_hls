@@ -1,0 +1,193 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS'" level="0">
+<item name = "Date">Wed Jun  7 23:11:35 2023
+</item>
+<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Project">chls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">11.00 ns, 4.802 ns, 2.97 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2, 11, 22.000 ns, 0.121 us, 2, 11, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- LOOP_SHA256_GEN_FULL_BLKS">0, 9, 9, 9, 16, 0 ~ 1, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 138, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 117, -</column>
+<column name="Register">-, -, 518, -, -</column>
+<specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="j_2_fu_186_p2">+, 0, 0, 65, 58, 1</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage2_11001">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln305_fu_181_p2">icmp, 0, 0, 65, 58, 58</column>
+<column name="ap_block_state10_pp0_stage0_iter1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">54, 10, 1, 10</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0_reg">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="blk_strm_blk_n">9, 2, 1, 2</column>
+<column name="j_fu_80">9, 2, 58, 116</column>
+<column name="msg_strm_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">9, 0, 9, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="conv15_1_1_reg_371">8, 0, 8, 0</column>
+<column name="conv15_1_2_reg_376">8, 0, 8, 0</column>
+<column name="conv15_1_3_reg_366">8, 0, 8, 0</column>
+<column name="conv15_1_reg_331">8, 0, 8, 0</column>
+<column name="conv15_2_1_reg_411">8, 0, 8, 0</column>
+<column name="conv15_2_2_reg_416">8, 0, 8, 0</column>
+<column name="conv15_2_3_reg_406">8, 0, 8, 0</column>
+<column name="conv15_2_reg_336">8, 0, 8, 0</column>
+<column name="conv15_3_1_reg_451">8, 0, 8, 0</column>
+<column name="conv15_3_2_reg_456">8, 0, 8, 0</column>
+<column name="conv15_3_3_reg_446">8, 0, 8, 0</column>
+<column name="conv15_3_reg_326">8, 0, 8, 0</column>
+<column name="conv15_4_1_reg_491">8, 0, 8, 0</column>
+<column name="conv15_4_2_reg_496">8, 0, 8, 0</column>
+<column name="conv15_4_3_reg_486">8, 0, 8, 0</column>
+<column name="conv15_5_1_reg_531">8, 0, 8, 0</column>
+<column name="conv15_5_2_reg_536">8, 0, 8, 0</column>
+<column name="conv15_5_3_reg_526">8, 0, 8, 0</column>
+<column name="conv15_6_1_reg_571">8, 0, 8, 0</column>
+<column name="conv15_6_2_reg_576">8, 0, 8, 0</column>
+<column name="conv15_6_3_reg_566">8, 0, 8, 0</column>
+<column name="conv36_0_reg_341">8, 0, 8, 0</column>
+<column name="conv36_1_0_reg_381">8, 0, 8, 0</column>
+<column name="conv36_1_1_reg_391">8, 0, 8, 0</column>
+<column name="conv36_1_2_reg_396">8, 0, 8, 0</column>
+<column name="conv36_1_3_reg_386">8, 0, 8, 0</column>
+<column name="conv36_1_reg_351">8, 0, 8, 0</column>
+<column name="conv36_2_0_reg_421">8, 0, 8, 0</column>
+<column name="conv36_2_1_reg_431">8, 0, 8, 0</column>
+<column name="conv36_2_2_reg_436">8, 0, 8, 0</column>
+<column name="conv36_2_3_reg_426">8, 0, 8, 0</column>
+<column name="conv36_2_reg_356">8, 0, 8, 0</column>
+<column name="conv36_3_0_reg_461">8, 0, 8, 0</column>
+<column name="conv36_3_1_reg_471">8, 0, 8, 0</column>
+<column name="conv36_3_2_reg_476">8, 0, 8, 0</column>
+<column name="conv36_3_3_reg_466">8, 0, 8, 0</column>
+<column name="conv36_3_reg_346">8, 0, 8, 0</column>
+<column name="conv36_4_0_reg_501">8, 0, 8, 0</column>
+<column name="conv36_4_1_reg_511">8, 0, 8, 0</column>
+<column name="conv36_4_2_reg_516">8, 0, 8, 0</column>
+<column name="conv36_4_3_reg_506">8, 0, 8, 0</column>
+<column name="conv36_5_0_reg_541">8, 0, 8, 0</column>
+<column name="conv36_5_1_reg_551">8, 0, 8, 0</column>
+<column name="conv36_5_2_reg_556">8, 0, 8, 0</column>
+<column name="conv36_5_3_reg_546">8, 0, 8, 0</column>
+<column name="conv36_6_0_reg_581">8, 0, 8, 0</column>
+<column name="conv36_6_1_reg_591">8, 0, 8, 0</column>
+<column name="conv36_6_2_reg_596">8, 0, 8, 0</column>
+<column name="conv36_6_3_reg_586">8, 0, 8, 0</column>
+<column name="empty_84_reg_361">8, 0, 8, 0</column>
+<column name="empty_85_reg_401">8, 0, 8, 0</column>
+<column name="empty_86_reg_441">8, 0, 8, 0</column>
+<column name="empty_87_reg_481">8, 0, 8, 0</column>
+<column name="empty_88_reg_521">8, 0, 8, 0</column>
+<column name="empty_89_reg_561">8, 0, 8, 0</column>
+<column name="empty_reg_321">8, 0, 8, 0</column>
+<column name="j_fu_80">58, 0, 58, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, return value</column>
+<column name="msg_strm_dout">in, 64, ap_fifo, msg_strm, pointer</column>
+<column name="msg_strm_num_data_valid">in, 16, ap_fifo, msg_strm, pointer</column>
+<column name="msg_strm_fifo_cap">in, 16, ap_fifo, msg_strm, pointer</column>
+<column name="msg_strm_empty_n">in, 1, ap_fifo, msg_strm, pointer</column>
+<column name="msg_strm_read">out, 1, ap_fifo, msg_strm, pointer</column>
+<column name="trunc_ln">in, 58, ap_none, trunc_ln, scalar</column>
+<column name="blk_strm_din">out, 512, ap_fifo, blk_strm, pointer</column>
+<column name="blk_strm_num_data_valid">in, 14, ap_fifo, blk_strm, pointer</column>
+<column name="blk_strm_fifo_cap">in, 14, ap_fifo, blk_strm, pointer</column>
+<column name="blk_strm_full_n">in, 1, ap_fifo, blk_strm, pointer</column>
+<column name="blk_strm_write">out, 1, ap_fifo, blk_strm, pointer</column>
+</table>
+</item>
+</section>
+</profile>

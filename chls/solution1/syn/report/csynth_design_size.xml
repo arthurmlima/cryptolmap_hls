@@ -1,0 +1,109 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="top_module" col1="top_module.cpp:19" col2="152836" col2_note="*" col3="13853" col4="3490" col5="3800">
+                    <row id="1" col0="get_image_stream" col1="sub_modules.cpp:8" col2="242" col3="37" col4="33" col5="52"/>
+                    <row id="3" col0="sha256&lt;64&gt;" col1="sha224_256.hpp:826" col2="1823" col3="1562" col4="1172" col5="1416">
+                        <row id="12" col0="sha256_top&lt;64, 256&gt;" col1="sha224_256.hpp:747" col2="1821" col3="1560" col4="1170" col5="1414">
+                            <row id="11" col0="preProcessing" col1="sha224_256.hpp:285" col2="817" col3="841" col4="696" col5="847"/>
+                            <row id="8" col0="dup_strm" col1="sha224_256.hpp:498" col2="106" col3="16" col4="15" col5="36"/>
+                            <row id="10" col0="generateMsgSchedule" col1="sha224_256.hpp:523" col2="193" col3="210" col4="183" col5="233"/>
+                            <row id="6" col0="sha256Digest&lt;256&gt;" col1="sha224_256.hpp:610" col2="588" col3="432" col4="239" col5="252">
+                                <row id="40" col0="sha256_iter" col1="sha224_256.hpp:565" col2="102" col3="90" col4="" col5=""/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="2" col0="set_hash_stream" col1="sub_modules.cpp:28" col2="157" col3="48" col4="41" col5="52"/>
+                    <row id="5" col0="logmap" col1="sub_modules.cpp:60" col2="150507" col3="12148" col4="2212" col5="2218">
+                        <row id="38" col0="powf" col1="powfloat.cpp:7" col2="97945" col2_disp=" 97,945 (5 calls)" col3="8032" col3_disp=" 8,032 (4 calls)" col4="" col5="">
+                            <row id="9" col0="pow_generic&lt;float&gt;" col1="hls_pow.h:320" col2="97935" col2_disp=" 97,935 (5 calls)" col3="8024" col3_disp=" 8,024 (4 calls)" col4="" col5="">
+                                <row id="25" col0="fp_struct" col1="x_hls_utils.h:312" col2="3490" col2_disp="  3,490 (10 calls)" col3="120" col3_disp="   120 (8 calls)" col4="" col5=""/>
+                                <row id="62" col0="fp_struct" col1="x_hls_utils.h:310" col2="140" col2_disp="    140 (5 calls)" col3="" col4="" col5=""/>
+                                <row id="29" col0="expv" col1="x_hls_utils.h:345" col2="1090" col2_disp="  1,090 (10 calls)" col3="48" col3_disp="    48 (8 calls)" col4="" col5=""/>
+                                <row id="18" col0="generic_isinf&lt;float&gt;" col1="hls_isinf.h:16" col2="4190" col2_disp="  4,190 (10 calls)" col3="224" col3_disp="   224 (8 calls)" col4="" col5="">
+                                    <row id="25" col0="fp_struct" col1="x_hls_utils.h:312" col2="3490" col2_disp="  3,490 (10 calls)" col3="120" col3_disp="   120 (8 calls)" col4="" col5=""/>
+                                </row>
+                                <row id="39" col0="generic_isnan&lt;float&gt;" col1="hls_isnan.h:16" col2="4200" col2_disp="  4,200 (10 calls)" col3="232" col3_disp="   232 (8 calls)" col4="" col5="">
+                                    <row id="25" col0="fp_struct" col1="x_hls_utils.h:312" col2="3490" col2_disp="  3,490 (10 calls)" col3="120" col3_disp="   120 (8 calls)" col4="" col5=""/>
+                                </row>
+                                <row id="4" col0="to_ieee" col1="x_hls_utils.h:375" col2="14220" col2_disp=" 14,220 (45 calls)" col3="864" col3_disp="   864 (36 calls)" col4="" col5="">
+                                    <row id="37" col0="to_float" col1="x_hls_utils.h:351" col2="14130" col2_disp=" 14,130 (45 calls)" col3="792" col3_disp="   792 (36 calls)" col4="" col5="">
+                                        <row id="20" col0="data" col1="x_hls_utils.h:338" col2="13320" col2_disp=" 13,320 (45 calls)" col3="612" col3_disp="   612 (36 calls)" col4="" col5=""/>
+                                    </row>
+                                </row>
+                                <row id="34" col0="log_range_reduction&lt;39&gt;" col1="hls_pow.h:159" col2="22895" col2_disp=" 22,895 (5 calls)" col3="2008" col3_disp=" 2,008 (4 calls)" col4="" col5="">
+                                    <row id="19" col0="log_range_reduce&lt;ap_fixed&lt;65, 9, AP_TRN, AP_WRAP, 0&gt;, 4, 4, 39, 41&gt;" col1="hls_pow.h:59" col2="6555" col2_disp="  6,555 (5 calls)" col3="520" col3_disp="   520 (4 calls)" col4="" col5=""/>
+                                    <row id="16" col0="log_range_reduce&lt;ap_fixed&lt;65, 9, AP_TRN, AP_WRAP, 0&gt;, 7, 6, 41, 44&gt;" col1="hls_pow.h:59" col2="6435" col2_disp="  6,435 (5 calls)" col3="508" col3_disp="   508 (4 calls)" col4="" col5=""/>
+                                    <row id="23" col0="log_range_reduce&lt;ap_fixed&lt;65, 9, AP_TRN, AP_WRAP, 0&gt;, 12, 6, 44, 39&gt;" col1="hls_pow.h:59" col2="6425" col2_disp="  6,425 (5 calls)" col3="508" col3_disp="   508 (4 calls)" col4="" col5=""/>
+                                </row>
+                                <row id="30" col0="exp_Z1P_m_1" col1="hls_pow.h:185" col2="1830" col2_disp="  1,830 (5 calls)" col3="240" col3_disp="   240 (4 calls)" col4="" col5=""/>
+                            </row>
+                        </row>
+                        <row id="35" col0="modf" col1="modfdouble.cpp:8" col2="47980" col2_disp=" 47,980 (10 calls)" col3="3640" col3_disp=" 3,640 (10 calls)" col4="" col5="">
+                            <row id="7" col0="generic_modf&lt;double&gt;" col1="hls_modf.h:15" col2="47960" col2_disp=" 47,960 (10 calls)" col3="3620" col3_disp=" 3,620 (10 calls)" col4="" col5="">
+                                <row id="41" col0="init_mask_table&lt;double&gt;" col1="hls_round.h:49" col2="190" col2_disp="    190 (10 calls)" col3="" col4="" col5=""/>
+                                <row id="26" col0="fp_struct" col1="x_hls_utils.h:485" col2="3500" col2_disp="  3,500 (10 calls)" col3="150" col3_disp="   150 (10 calls)" col4="" col5=""/>
+                                <row id="13" col0="generic_copysign&lt;double&gt;" col1="hls_copysign.h:10" col2="20680" col2_disp=" 20,680 (20 calls)" col3="1320" col3_disp=" 1,320 (20 calls)" col4="" col5="">
+                                    <row id="26" col0="fp_struct" col1="x_hls_utils.h:485" col2="14000" col2_disp=" 14,000 (40 calls)" col3="600" col3_disp="   600 (40 calls)" col4="" col5=""/>
+                                    <row id="17" col0="to_ieee" col1="x_hls_utils.h:538" col2="6320" col2_disp="  6,320 (20 calls)" col3="480" col3_disp="   480 (20 calls)" col4="" col5="">
+                                        <row id="21" col0="to_double" col1="x_hls_utils.h:523" col2="6280" col2_disp="  6,280 (20 calls)" col3="440" col3_disp="   440 (20 calls)" col4="" col5="">
+                                            <row id="22" col0="data" col1="x_hls_utils.h:504" col2="5920" col2_disp="  5,920 (20 calls)" col3="340" col3_disp="   340 (20 calls)" col4="" col5=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="36" col0="generic_isnan&lt;double&gt;" col1="hls_isnan.h:16" col2="4210" col2_disp="  4,210 (10 calls)" col3="290" col3_disp="   290 (10 calls)" col4="" col5="">
+                                    <row id="26" col0="fp_struct" col1="x_hls_utils.h:485" col2="3500" col2_disp="  3,500 (10 calls)" col3="150" col3_disp="   150 (10 calls)" col4="" col5=""/>
+                                </row>
+                                <row id="47" col0="fp_struct" col1="x_hls_utils.h:483" col2="560" col2_disp="    560 (20 calls)" col3="" col4="" col5=""/>
+                                <row id="17" col0="to_ieee" col1="x_hls_utils.h:538" col2="9480" col2_disp="  9,480 (30 calls)" col3="720" col3_disp="   720 (30 calls)" col4="" col5="">
+                                    <row id="21" col0="to_double" col1="x_hls_utils.h:523" col2="9420" col2_disp="  9,420 (30 calls)" col3="660" col3_disp="   660 (30 calls)" col4="" col5="">
+                                        <row id="22" col0="data" col1="x_hls_utils.h:504" col2="8880" col2_disp="  8,880 (30 calls)" col3="510" col3_disp="   510 (30 calls)" col4="" col5=""/>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="28" col0="abs" col1="std_abs.h:70" col2="2080" col2_disp="  2,080 (2 calls)" col3="144" col3_disp="   144 (2 calls)" col4="" col5="">
+                            <row id="33" col0="fabs" col1="fabsdouble.cpp:7" col2="2076" col2_disp="  2,076 (2 calls)" col3="140" col3_disp="   140 (2 calls)" col4="" col5="">
+                                <row id="27" col0="generic_fabs&lt;double&gt;" col1="hls_fabs.h:12" col2="2072" col2_disp="  2,072 (2 calls)" col3="136" col3_disp="   136 (2 calls)" col4="" col5="">
+                                    <row id="13" col0="generic_copysign&lt;double&gt;" col1="hls_copysign.h:10" col2="2068" col2_disp="  2,068 (2 calls)" col3="132" col3_disp="   132 (2 calls)" col4="" col5="">
+                                        <row id="26" col0="fp_struct" col1="x_hls_utils.h:485" col2="1400" col2_disp="  1,400 (4 calls)" col3="60" col3_disp="    60 (4 calls)" col4="" col5=""/>
+                                        <row id="17" col0="to_ieee" col1="x_hls_utils.h:538" col2="632" col2_disp="    632 (2 calls)" col3="48" col3_disp="    48 (2 calls)" col4="" col5="">
+                                            <row id="21" col0="to_double" col1="x_hls_utils.h:523" col2="628" col2_disp="    628 (2 calls)" col3="44" col3_disp="    44 (2 calls)" col4="" col5="">
+                                                <row id="22" col0="data" col1="x_hls_utils.h:504" col2="592" col2_disp="    592 (2 calls)" col3="34" col3_disp="    34 (2 calls)" col4="" col5=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="9" col0="pow_generic&lt;float&gt;" col1="hls_pow.h:320" col2="" col3="" col4="1396" col4_disp="1,396 (4 calls)" col5="1400" col5_disp="1,400 (4 calls)">
+                            <row id="4" col0="to_ieee" col1="x_hls_utils.h:375" col2="" col3="" col4="180" col4_disp="  180 (36 calls)" col5="180" col5_disp="  180 (36 calls)"/>
+                        </row>
+                        <row id="7" col0="generic_modf&lt;double&gt;" col1="hls_modf.h:15" col2="" col3="" col4="640" col4_disp="  640 (10 calls)" col5="640" col5_disp="  640 (10 calls)"/>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

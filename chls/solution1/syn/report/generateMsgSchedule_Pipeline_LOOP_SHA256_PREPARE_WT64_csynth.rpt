@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64'
+================================================================
+* Date:           Wed Jun  7 23:11:38 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        chls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  11.00 ns|  2.174 ns|     2.97 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       50|       50|  0.550 us|  0.550 us|   50|   50|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |          Loop Name         |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOOP_SHA256_PREPARE_WT64  |       48|       48|         2|          1|          1|    48|       yes|
+        +----------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     264|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|     189|    -|
+|Register         |        -|     -|     555|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     555|     453|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      624|  1728|  460800|  230400|   96|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Wt_1_fu_573_p2             |         +|   0|  0|  32|          32|          32|
+    |add_ln553_1_fu_567_p2      |         +|   0|  0|  39|          32|          32|
+    |add_ln553_fu_561_p2        |         +|   0|  0|  32|          32|          32|
+    |t_5_fu_579_p2              |         +|   0|  0|  14|           7|           1|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln549_fu_406_p2       |      icmp|   0|  0|  15|           7|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    |xor_ln553_1_fu_543_p2      |       xor|   0|  0|  32|          32|          32|
+    |xor_ln553_2_fu_549_p2      |       xor|   0|  0|  32|          32|          32|
+    |xor_ln553_3_fu_555_p2      |       xor|   0|  0|  32|          32|          32|
+    |xor_ln553_fu_537_p2        |       xor|   0|  0|  32|          32|          32|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0| 264|         240|         236|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |Wt_fu_172                |   9|          2|   32|         64|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |empty_100_fu_132         |   9|          2|   32|         64|
+    |empty_101_fu_136         |   9|          2|   32|         64|
+    |empty_102_fu_140         |   9|          2|   32|         64|
+    |empty_103_fu_144         |   9|          2|   32|         64|
+    |empty_104_fu_148         |   9|          2|   32|         64|
+    |empty_105_fu_152         |   9|          2|   32|         64|
+    |empty_106_fu_156         |   9|          2|   32|         64|
+    |empty_107_fu_160         |   9|          2|   32|         64|
+    |empty_108_fu_164         |   9|          2|   32|         64|
+    |empty_109_fu_168         |   9|          2|   32|         64|
+    |empty_96_fu_116          |   9|          2|   32|         64|
+    |empty_97_fu_120          |   9|          2|   32|         64|
+    |empty_98_fu_124          |   9|          2|   32|         64|
+    |empty_99_fu_128          |   9|          2|   32|         64|
+    |empty_fu_112             |   9|          2|   32|         64|
+    |t_2_fu_108               |   9|          2|    7|         14|
+    |w_strm_blk_n             |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 189|         42|  523|       1046|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |Wt_1_reg_792             |  32|   0|   32|          0|
+    |Wt_fu_172                |  32|   0|   32|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |empty_100_fu_132         |  32|   0|   32|          0|
+    |empty_101_fu_136         |  32|   0|   32|          0|
+    |empty_102_fu_140         |  32|   0|   32|          0|
+    |empty_103_fu_144         |  32|   0|   32|          0|
+    |empty_104_fu_148         |  32|   0|   32|          0|
+    |empty_105_fu_152         |  32|   0|   32|          0|
+    |empty_106_fu_156         |  32|   0|   32|          0|
+    |empty_107_fu_160         |  32|   0|   32|          0|
+    |empty_108_fu_164         |  32|   0|   32|          0|
+    |empty_109_fu_168         |  32|   0|   32|          0|
+    |empty_96_fu_116          |  32|   0|   32|          0|
+    |empty_97_fu_120          |  32|   0|   32|          0|
+    |empty_98_fu_124          |  32|   0|   32|          0|
+    |empty_99_fu_128          |  32|   0|   32|          0|
+    |empty_fu_112             |  32|   0|   32|          0|
+    |t_2_fu_108               |   7|   0|    7|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 555|   0|  555|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |                     Source Object                     |    C Type    |
++-----------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64|  return value|
+|w_strm_din             |  out|   32|     ap_fifo|                                                 w_strm|       pointer|
+|w_strm_num_data_valid  |   in|    6|     ap_fifo|                                                 w_strm|       pointer|
+|w_strm_fifo_cap        |   in|    6|     ap_fifo|                                                 w_strm|       pointer|
+|w_strm_full_n          |   in|    1|     ap_fifo|                                                 w_strm|       pointer|
+|w_strm_write           |  out|    1|     ap_fifo|                                                 w_strm|       pointer|
+|W_reload               |   in|   32|     ap_none|                                               W_reload|        scalar|
+|W_2_reload             |   in|   32|     ap_none|                                             W_2_reload|        scalar|
+|W_3_reload             |   in|   32|     ap_none|                                             W_3_reload|        scalar|
+|W_4_reload             |   in|   32|     ap_none|                                             W_4_reload|        scalar|
+|W_5_reload             |   in|   32|     ap_none|                                             W_5_reload|        scalar|
+|W_7_reload             |   in|   32|     ap_none|                                             W_7_reload|        scalar|
+|W_8_reload             |   in|   32|     ap_none|                                             W_8_reload|        scalar|
+|W_9_reload             |   in|   32|     ap_none|                                             W_9_reload|        scalar|
+|W_10_reload            |   in|   32|     ap_none|                                            W_10_reload|        scalar|
+|W_11_reload            |   in|   32|     ap_none|                                            W_11_reload|        scalar|
+|W_12_reload            |   in|   32|     ap_none|                                            W_12_reload|        scalar|
+|W_13_reload            |   in|   32|     ap_none|                                            W_13_reload|        scalar|
+|W_15_reload            |   in|   32|     ap_none|                                            W_15_reload|        scalar|
+|W_14_reload            |   in|   32|     ap_none|                                            W_14_reload|        scalar|
+|W_6_reload             |   in|   32|     ap_none|                                             W_6_reload|        scalar|
+|W_1_reload             |   in|   32|     ap_none|                                             W_1_reload|        scalar|
++-----------------------+-----+-----+------------+-------------------------------------------------------+--------------+
+

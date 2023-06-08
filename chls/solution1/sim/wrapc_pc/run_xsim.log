@@ -1,0 +1,254 @@
+the resulted sha256:
+76 1B 11 C3 A0 39 96 C8 9D 2E 7B 6E DB 47 2F A6 13 6 28 2E CE 6 15 93 69 AD 7A 99 4F D9 3 96 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 262208
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_top_module_top glbl -Oenable_linking_all_libraries -prj top_module.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s top_module 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_sha256_top_64_256_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sha256_top_64_256_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_preProcessing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_preProcessing
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_start_for_sha256Digest_256_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_start_for_sha256Digest_256_U0
+INFO: [VRFC 10-311] analyzing module top_module_start_for_sha256Digest_256_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT64
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_start_for_set_hash_stream_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_start_for_set_hash_stream_U0
+INFO: [VRFC 10-311] analyzing module top_module_start_for_set_hash_stream_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w1_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d32_D
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w32_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w32_d32_D
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w32_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w256_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w256_d1_S
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w256_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_mux_64_6_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_mux_64_6_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_axi_s_input_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_generateMsgSchedule_Pipeline_LOOP_SHA256_PREPARE_WT16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w1_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d1_S
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_mux_16_4_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_mux_16_4_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream_h_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream_h_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_dup_strm_Pipeline_VITIS_LOOP_506_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_dup_strm_Pipeline_VITIS_LOOP_506_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_start_for_generateMsgSchedule_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_start_for_generateMsgSchedule_U0
+INFO: [VRFC 10-311] analyzing module top_module_start_for_generateMsgSchedule_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_sha256Digest_256_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sha256Digest_256_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w64_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d1_S
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_generateMsgSchedule.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_generateMsgSchedule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream_Pipeline_VITIS_LOOP_32_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream_Pipeline_VITIS_LOOP_32_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_sha256Digest_256_Pipeline_LOOP_SHA256_UPDATE_64_ROUNDS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sha256Digest_256_Pipeline_LOOP_SHA256_UPDATE_64_ROUNDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_sha256_64_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_sha256_64_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_get_image_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_get_image_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_top_module_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_regslice_both
+INFO: [VRFC 10-311] analyzing module top_module_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w512_d4097_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w512_d4097_D
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w512_d4097_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w64_d32768_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d32768_A
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d32768_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream_Pipeline_VITIS_LOOP_48_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream_Pipeline_VITIS_LOOP_48_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_dup_strm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_dup_strm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream_Pipeline_VITIS_LOOP_38_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream_Pipeline_VITIS_LOOP_38_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w64_d32_D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d32_D
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w64_d32_D_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_start_for_dup_strm_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_start_for_dup_strm_U0
+INFO: [VRFC 10-311] analyzing module top_module_start_for_dup_strm_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_start_for_sha256_64_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_start_for_sha256_64_U0
+INFO: [VRFC 10-311] analyzing module top_module_start_for_sha256_64_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/AESL_axi_s_output_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_set_hash_stream_Pipeline_VITIS_LOOP_42_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_set_hash_stream_Pipeline_VITIS_LOOP_42_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_get_image_stream_Pipeline_VITIS_LOOP_13_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_get_image_stream_Pipeline_VITIS_LOOP_13_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_fifo_w1_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d2_S
+INFO: [VRFC 10-311] analyzing module top_module_fifo_w1_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_PAD_ONE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_PAD_ONE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.top_module_control_s_axi
+Compiling module xil_defaultlib.top_module_flow_control_loop_pip...
+Compiling module xil_defaultlib.top_module_get_image_stream_Pipe...
+Compiling module xil_defaultlib.top_module_regslice_both(DataWid...
+Compiling module xil_defaultlib.top_module_regslice_both(DataWid...
+Compiling module xil_defaultlib.top_module_regslice_both(DataWid...
+Compiling module xil_defaultlib.top_module_get_image_stream
+Compiling module xil_defaultlib.top_module_preProcessing_Pipelin...
+Compiling module xil_defaultlib.top_module_preProcessing_Pipelin...
+Compiling module xil_defaultlib.top_module_preProcessing
+Compiling module xil_defaultlib.top_module_dup_strm_Pipeline_VIT...
+Compiling module xil_defaultlib.top_module_dup_strm
+Compiling module xil_defaultlib.top_module_mux_16_4_32_1_1(ID=1,...
+Compiling module xil_defaultlib.top_module_generateMsgSchedule_P...
+Compiling module xil_defaultlib.top_module_generateMsgSchedule_P...
+Compiling module xil_defaultlib.top_module_generateMsgSchedule
+Compiling module xil_defaultlib.top_module_mux_64_6_32_1_1(ID=1,...
+Compiling module xil_defaultlib.top_module_sha256Digest_256_Pipe...
+Compiling module xil_defaultlib.top_module_sha256Digest_256_s
+Compiling module xil_defaultlib.top_module_fifo_w512_d4097_D_ram
+Compiling module xil_defaultlib.top_module_fifo_w512_d4097_D
+Compiling module xil_defaultlib.top_module_fifo_w64_d32_D_ram
+Compiling module xil_defaultlib.top_module_fifo_w64_d32_D
+Compiling module xil_defaultlib.top_module_fifo_w1_d32_D_ram
+Compiling module xil_defaultlib.top_module_fifo_w1_d32_D
+Compiling module xil_defaultlib.top_module_fifo_w32_d32_D_ram
+Compiling module xil_defaultlib.top_module_fifo_w32_d32_D
+Compiling module xil_defaultlib.top_module_start_for_dup_strm_U0...
+Compiling module xil_defaultlib.top_module_start_for_dup_strm_U0
+Compiling module xil_defaultlib.top_module_start_for_generateMsg...
+Compiling module xil_defaultlib.top_module_start_for_generateMsg...
+Compiling module xil_defaultlib.top_module_start_for_sha256Diges...
+Compiling module xil_defaultlib.top_module_start_for_sha256Diges...
+Compiling module xil_defaultlib.top_module_sha256_top_64_256_s
+Compiling module xil_defaultlib.top_module_sha256_64_s
+Compiling module xil_defaultlib.top_module_set_hash_stream_h_RAM...
+Compiling module xil_defaultlib.top_module_set_hash_stream_Pipel...
+Compiling module xil_defaultlib.top_module_set_hash_stream_Pipel...
+Compiling module xil_defaultlib.top_module_set_hash_stream_Pipel...
+Compiling module xil_defaultlib.top_module_set_hash_stream_Pipel...
+Compiling module xil_defaultlib.top_module_set_hash_stream
+Compiling module xil_defaultlib.top_module_fifo_w64_d32768_A_ram
+Compiling module xil_defaultlib.top_module_fifo_w64_d32768_A
+Compiling module xil_defaultlib.top_module_fifo_w64_d1_S_ShiftRe...
+Compiling module xil_defaultlib.top_module_fifo_w64_d1_S
+Compiling module xil_defaultlib.top_module_fifo_w1_d1_S_ShiftReg
+Compiling module xil_defaultlib.top_module_fifo_w1_d1_S
+Compiling module xil_defaultlib.top_module_fifo_w256_d1_S_ShiftR...
+Compiling module xil_defaultlib.top_module_fifo_w256_d1_S
+Compiling module xil_defaultlib.top_module_fifo_w1_d2_S_ShiftReg
+Compiling module xil_defaultlib.top_module_fifo_w1_d2_S
+Compiling module xil_defaultlib.top_module_start_for_sha256_64_U...
+Compiling module xil_defaultlib.top_module_start_for_sha256_64_U...
+Compiling module xil_defaultlib.top_module_start_for_set_hash_st...
+Compiling module xil_defaultlib.top_module_start_for_set_hash_st...
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.fifo(DEPTH=32768,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=32768)
+Compiling module xil_defaultlib.fifo(DEPTH=32768,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_input_stream
+Compiling module xil_defaultlib.fifo(DEPTH=4,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=4,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_output_stream
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=9)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=8)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=9)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_top_module_top
+Compiling module work.glbl
+Built simulation snapshot top_module
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/top_module/xsim_script.tcl
+# xsim {top_module} -autoloadwcfg -tclbatch {top_module.tcl}
+Time resolution is 1 ps
+source top_module.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "3606185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 3606245 ns : File "/home/arthur/mapalogistico/chls/chls/solution1/sim/verilog/top_module.autotb.v" Line 448
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:26 . Memory (MB): peak = 1252.273 ; gain = 0.000 ; free physical = 220 ; free virtual = 54187
+## quit
+INFO: xsimkernel Simulation Memory Usage: 133684 KB (Peak: 166684 KB), Simulation CPU Usage: 25750 ms
+INFO: [Common 17-206] Exiting xsim at Sun Jun  4 20:53:22 2023...
+the resulted sha256:
+76 1B 11 C3 A0 39 96 C8 9D 2E 7B 6E DB 47 2F A6 13 6 28 2E CE 6 15 93 69 AD 7A 99 4F D9 3 96 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 32768

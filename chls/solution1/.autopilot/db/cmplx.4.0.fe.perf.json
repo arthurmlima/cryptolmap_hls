@@ -1,0 +1,173 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1 11 10 2",
+    "file": "top_module.cpp",
+    "fileloc": 19,
+    "instructions": 62,
+    "name": "top_module",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3800
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "sub_modules.cpp",
+    "fileloc": 8,
+    "instructions": 52,
+    "loads": {
+      "L": 7
+    },
+    "name": "get_image_stream",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 52
+  },
+  "10": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "sub_modules.cpp",
+    "fileloc": 28,
+    "instructions": 52,
+    "loads": {
+      "L": 2
+    },
+    "name": "set_hash_stream",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 52
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "sha224_256.hpp",
+    "fileloc": 826,
+    "instructions": 2,
+    "name": "sha256<64>",
+    "total_instructions": 1416
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 375,
+    "instructions": 5,
+    "name": "to_ieee",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "6 4 4 6 4 4 6 4 4 6 4 4 4 4",
+    "file": "sub_modules.cpp",
+    "fileloc": 60,
+    "instructions": 178,
+    "loads": {
+      "L": 2
+    },
+    "name": "logmap",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 2218
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 610,
+    "instructions": 252,
+    "loads": {
+      "L": 4
+    },
+    "name": "sha256Digest<256>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 252
+  },
+  "4": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hls_modf.h",
+    "fileloc": 15,
+    "instructions": 64,
+    "loads": {
+      "G": 1
+    },
+    "name": "generic_modf<double>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 64
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 498,
+    "instructions": 36,
+    "loads": {
+      "L": 3
+    },
+    "name": "dup_strm",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 36
+  },
+  "6": {
+    "basicblocks": 23,
+    "calls": "12 12 12 12 12 12 12 12 12",
+    "file": "hls_pow.h",
+    "fileloc": 320,
+    "instructions": 305,
+    "loads": {
+      "G": 7
+    },
+    "name": "pow_generic<float>",
+    "total_instructions": 350
+  },
+  "7": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 523,
+    "instructions": 233,
+    "loads": {
+      "L": 4
+    },
+    "name": "generateMsgSchedule",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 233
+  },
+  "8": {
+    "basicblocks": 123,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 285,
+    "instructions": 847,
+    "loads": {
+      "L": 16
+    },
+    "name": "preProcessing",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 847
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "8 5 7 3",
+    "file": "sha224_256.hpp",
+    "fileloc": 747,
+    "instructions": 46,
+    "name": "sha256_top<64, 256>",
+    "total_instructions": 1414
+  }
+}

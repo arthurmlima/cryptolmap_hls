@@ -1,0 +1,5 @@
+8 warnings and 34 errors generated.
+Error while processing /home/arthur/MapaLogistico/chls/chls/solution1/.autopilot/db/sub_modules.pp.0.cpp.
+clang-tidy applied 186 of 186 suggested fixes.
+Suppressed 150 warnings (142 in non-user code, 8 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

@@ -1,0 +1,721 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "11 25 58 49",
+    "file": "top_module.cpp",
+    "fileloc": 19,
+    "instructions": 92,
+    "name": "top_module",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 152836
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "51 52 55 54 42 39 38 47 46 50 48 32 30 31 28",
+    "file": "rootnfloat.pp.cpp",
+    "fileloc": 0,
+    "instructions": 16,
+    "name": "",
+    "total_instructions": 22223
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "name": "generic_cast_IEEE754<long, double>",
+    "total_instructions": 2186
+  },
+  "11": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "sub_modules.cpp",
+    "fileloc": 8,
+    "instructions": 57,
+    "loads": {
+      "L": 1
+    },
+    "name": "get_image_stream",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 242
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 514,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 345,
+    "instructions": 8,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 504,
+    "instructions": 33,
+    "name": "data",
+    "total_instructions": 296
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "14",
+    "file": "x_hls_utils.h",
+    "fileloc": 523,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_double",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 314
+  },
+  "16": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "x_hls_utils.h",
+    "fileloc": 538,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 316
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "18 18 16",
+    "file": "hls_copysign.h",
+    "fileloc": 10,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_copysign<double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1034
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 485,
+    "instructions": 58,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 350
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "17",
+    "file": "hls_fabs.h",
+    "fileloc": 12,
+    "instructions": 2,
+    "name": "generic_fabs<double>",
+    "total_instructions": 1036
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "__hls_fptosi_double_i64",
+    "total_instructions": 2188
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "fabsdouble.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "fabs",
+    "total_instructions": 1038
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "56",
+    "file": "x_hls_utils.h",
+    "fileloc": 375,
+    "instructions": 2,
+    "name": "to_ieee",
+    "total_instructions": 316
+  },
+  "22": {
+    "basicblocks": 3,
+    "calls": "6",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isnan<float>",
+    "total_instructions": 420
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "37 35 34 41",
+    "file": "sha224_256.hpp",
+    "fileloc": 747,
+    "instructions": 93,
+    "name": "sha256_top<64, 256>",
+    "total_instructions": 1821
+  },
+  "24": {
+    "basicblocks": 3,
+    "calls": "6",
+    "file": "hls_isinf.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isinf<float>",
+    "total_instructions": 419
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "23",
+    "file": "sha224_256.hpp",
+    "fileloc": 826,
+    "instructions": 2,
+    "name": "sha256<64>",
+    "total_instructions": 1823
+  },
+  "26": {
+    "basicblocks": 13,
+    "calls": "27 18 17 33 36 16 17 36 16 16",
+    "file": "hls_modf.h",
+    "fileloc": 15,
+    "instructions": 189,
+    "loads": {
+      "L": 9
+    },
+    "name": "generic_modf<double>",
+    "stores": {
+      "L": 11
+    },
+    "total_instructions": 4796
+  },
+  "27": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hls_round.h",
+    "fileloc": 49,
+    "instructions": 19,
+    "name": "init_mask_table<double>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2755,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1556",
+    "total_instructions": 4865
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 541,
+    "instructions": 4,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 897,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.428",
+    "total_instructions": 1217
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2449,
+    "instructions": 33,
+    "name": "__cxx_global_var_init.1268",
+    "total_instructions": 609
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 2488,
+    "instructions": 257,
+    "name": "__cxx_global_var_init.1300",
+    "total_instructions": 4865
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 708,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.341",
+    "total_instructions": 1217
+  },
+  "33": {
+    "basicblocks": 3,
+    "calls": "18",
+    "file": "hls_isnan.h",
+    "fileloc": 16,
+    "instructions": 18,
+    "name": "generic_isnan<double>",
+    "total_instructions": 421
+  },
+  "34": {
+    "basicblocks": 29,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 523,
+    "instructions": 143,
+    "loads": {
+      "L": 16
+    },
+    "name": "generateMsgSchedule",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 193
+  },
+  "35": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 498,
+    "instructions": 46,
+    "name": "dup_strm",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 106
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 483,
+    "instructions": 7,
+    "name": "fp_struct",
+    "total_instructions": 28
+  },
+  "37": {
+    "basicblocks": 174,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 285,
+    "instructions": 635,
+    "name": "preProcessing",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 817
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 336,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.84",
+    "total_instructions": 1217
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 261,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.83",
+    "total_instructions": 1217
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "3 62 63 64",
+    "file": "powrfloat.pp.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "name": "",
+    "total_instructions": 21897
+  },
+  "40": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "powfloat.cpp",
+    "fileloc": 7,
+    "instructions": 2,
+    "name": "powf",
+    "total_instructions": 19589
+  },
+  "41": {
+    "basicblocks": 34,
+    "calls": "45",
+    "file": "sha224_256.hpp",
+    "fileloc": 610,
+    "instructions": 299,
+    "loads": {
+      "G": 1,
+      "L": 26
+    },
+    "name": "sha256Digest<256>",
+    "stores": {
+      "L": 27
+    },
+    "total_instructions": 588
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 189,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.82",
+    "total_instructions": 1217
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "20",
+    "file": "std_abs.h",
+    "fileloc": 70,
+    "instructions": 2,
+    "name": "abs",
+    "total_instructions": 1040
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "26",
+    "file": "modfdouble.cpp",
+    "fileloc": 8,
+    "instructions": 2,
+    "name": "modf",
+    "total_instructions": 4798
+  },
+  "45": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 565,
+    "instructions": 90,
+    "loads": {
+      "L": 32
+    },
+    "name": "sha256_iter",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 102
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 483,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.149",
+    "total_instructions": 1217
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 408,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.148",
+    "total_instructions": 1217
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 633,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.277",
+    "total_instructions": 1217
+  },
+  "49": {
+    "basicblocks": 13,
+    "calls": "40 44 44 40 44 44 40 44 44 40 44 44 44 43 40 2 44 43",
+    "file": "sub_modules.cpp",
+    "fileloc": 60,
+    "instructions": 165,
+    "loads": {
+      "L": 8
+    },
+    "name": "logmap",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 150507
+  },
+  "5": {
+    "basicblocks": 71,
+    "calls": "6 6 9 13 13 24 22 22 24 21 21 21 21 21 65 57 21 21 21 21",
+    "file": "hls_pow.h",
+    "fileloc": 320,
+    "instructions": 1070,
+    "loads": {
+      "G": 3,
+      "L": 23
+    },
+    "name": "pow_generic<float>",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 19587
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 558,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.213",
+    "total_instructions": 1217
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 45,
+    "instructions": 17,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 305
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 68,
+    "instructions": 17,
+    "name": "__cxx_global_var_init.16",
+    "total_instructions": 305
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 338,
+    "instructions": 33,
+    "name": "data",
+    "total_instructions": 296
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 117,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.18",
+    "total_instructions": 1217
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 91,
+    "instructions": 17,
+    "name": "__cxx_global_var_init.17",
+    "total_instructions": 305
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "53",
+    "file": "x_hls_utils.h",
+    "fileloc": 351,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "to_float",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 314
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 185,
+    "instructions": 40,
+    "name": "exp_Z1P_m_1",
+    "total_instructions": 366
+  },
+  "58": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "sub_modules.cpp",
+    "fileloc": 28,
+    "instructions": 89,
+    "loads": {
+      "L": 2
+    },
+    "name": "set_hash_stream",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 157
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 59,
+    "instructions": 102,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<65, 9, AP_TRN, AP_WRAP, 0>, 4, 4, 39, 41>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1311
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 312,
+    "instructions": 58,
+    "loads": {
+      "L": 1
+    },
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 349
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 59,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<65, 9, AP_TRN, AP_WRAP, 0>, 7, 6, 41, 44>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1287
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow.h",
+    "fileloc": 59,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "name": "log_range_reduce<ap_fixed<65, 9, AP_TRN, AP_WRAP, 0>, 12, 6, 44, 39>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 1285
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 1070,
+    "instructions": 65,
+    "name": "__cxx_global_var_init.474",
+    "total_instructions": 1217
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 1144,
+    "instructions": 513,
+    "name": "__cxx_global_var_init.497",
+    "total_instructions": 9729
+  },
+  "64": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_pow_tables.h",
+    "fileloc": 1663,
+    "instructions": 513,
+    "name": "__cxx_global_var_init.1010",
+    "total_instructions": 9729
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "59 60 61",
+    "file": "hls_pow.h",
+    "fileloc": 159,
+    "instructions": 41,
+    "loads": {
+      "L": 3
+    },
+    "name": "log_range_reduction<39>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 4579
+  },
+  "7": {
+    "basicblocks": 16,
+    "calls": "18 8 12 12 29 29",
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 131,
+    "loads": {
+      "L": 1
+    },
+    "name": "generic_cast_IEEE754<long, AP_TRN_ZERO, double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2184
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 532,
+    "instructions": 24,
+    "name": "mantissa",
+    "total_instructions": 193
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 310,
+    "instructions": 7,
+    "name": "fp_struct",
+    "total_instructions": 28
+  }
+}
