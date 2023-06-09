@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "string": "cpp",
-        "cstdio": "cpp",
-        "*.tcc": "cpp",
-        "cmath": "cpp"
-    }
-}

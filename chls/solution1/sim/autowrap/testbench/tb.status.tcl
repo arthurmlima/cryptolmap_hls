@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/arthur/mapalogistico/chls/chls/solution1/./sim/autowrap/testbench/top_module.cpp_pre.cpp.tb.cpp
