@@ -14,17 +14,21 @@
 # limitations under the License.
 # vitis hls makefile-generator v2.0.0
 
+puts "First argument: $argv"
+set scriptPath [file dirname [info script]]
+puts "Present location: $scriptPath"
+cd $scriptPath
 set PROJ "cryptolmap"
 
 open_project -reset $PROJ
 
-add_files "src/sub_modules.cpp" -cflags "-I../../Vitis_Libraries/security/L1/include"
-add_files "src/top_module.cpp" -cflags  "-I../../Vitis_Libraries/security/L1/include"
-add_files "src/sub_modules.hpp" -cflags "-I../../Vitis_Libraries/security/L1/include"
-add_files "src/top_module.hpp" -cflags "-I../../Vitis_Libraries/security/L1/include"
-add_files -tb "src/header.h" -cflags "-I../../Vitis_Libraries/security/L1/include"
-add_files -tb "src/test_bench.cpp" -cflags "-I../../Vitis_Libraries/security/L1/include"
-add_files -tb "src/image.h" -cflags "-I../../Vitis_Libraries/security/L1/include"
+add_files "src/sub_modules.cpp" -cflags "-I../Vitis_Libraries/security/L1/include"
+add_files "src/top_module.cpp" -cflags  "-I../Vitis_Libraries/security/L1/include"
+add_files "src/sub_modules.hpp" -cflags "-I../Vitis_Libraries/security/L1/include"
+add_files "src/top_module.hpp" -cflags "-I../Vitis_Libraries/security/L1/include"
+add_files -tb "src/header.h" -cflags "-I../Vitis_Libraries/security/L1/include"
+add_files -tb "src/test_bench.cpp" -cflags "-I../Vitis_Libraries/security/L1/include"
+add_files -tb "src/image.h" -cflags "-I../Vitis_Libraries/security/L1/include"
 
 set_top top_module
 
@@ -34,7 +38,7 @@ create_clock -period 11 -name default
 
 csim_design -argv {10}
 csynth_design
-cosim_design
-export_design -rtl verilog -format ip_catalog -output ../../ip_repo/
+export_design -rtl verilog -format ip_catalog -output ../hw/ip_repo/
+exec unzip ../hw/ip_repo/export.zip -d ../hw/ip_repo/
 
 exit

@@ -89,7 +89,7 @@ void logmap(
         y_diff = std::modf(logmap2_diff, &dummy);
     }
 
-    for (int i = 0; i < 40; i++)
+    for (int i = 0; i < BSIZE; i++)
     {
 #pragma HLS PIPELINE off
         logmap1_diff = uu_diff * x_diff * (1.0 - x_diff);
