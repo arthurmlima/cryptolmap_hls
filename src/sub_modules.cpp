@@ -1,10 +1,10 @@
-#include "hls_math.h"
+#include"hls_math.h"
 #include"sub_modules.hpp"
 #include"top_module.hpp"
 #include"hls_print.h"
 #include<hls_stream.h>
 #include<ap_axi_sdata.h>
-#include"math.h"
+#include"cmath"
 
  void get_image_stream(
     in_stream &input_stream,
@@ -59,66 +59,52 @@ void set_hash_stream(
 //   logmap(image_Init, dT, muperm, muDiff, output_stream);
 
 void logmap(
-    float& m_perm,
     float& m_diff,
 	out_stream &output_stream,
-    int u_perm,
     int u_diff,
-    int u_dt,
 	uint64_t* Image){
-
-	float x_perm = m_perm;                                                                                                      
-    float y_perm = m_perm;
 
     float x_diff = m_diff;
     float y_diff = m_diff;
 
-    long double uu_perm=(long double)u_perm;
-    long double uu_diff=(long double)u_diff;
-    
+    float uu_diff=u_diff;
+    float uu_diff2=u_diff;
 
-    double dummy;
+    float logmap1_diff;
+    float logmap2_diff;
+    float	map_diff;
+    float dummy;
+    float p;
+    uint8_t l_diff;
+    out_data_axis outHash;
 
-    for (int i = 0; i < u_dt; i++)
+    for (int i = 0; i < 10; i++)
     {
 #pragma HLS PIPELINE off
-    	long double logmap1_perm = (long double) uu_perm * x_perm * (1.0 - x_perm);
-    	long double logmap2_perm = (long double) uu_perm * y_perm - uu_perm * powf(y_perm,2);
 
-    	x_perm = modf((double)logmap1_perm, &dummy);
-    	y_perm = modf((double)logmap2_perm, &dummy);
+        logmap1_diff = uu_diff * x_diff * (1.0 - x_diff);
+        logmap2_diff = uu_diff2 * y_diff - uu_diff2 * std::pow(y_diff,2.0f);
 
-        long double logmap1_diff = (long double) uu_diff * x_diff * (1.0 - x_diff);
-        long double logmap2_diff = (long double) uu_diff * y_diff - uu_diff * powf(y_diff,2);
-
-        x_diff = modf((double)logmap1_diff, &dummy);
-        y_diff = modf((double)logmap2_diff, &dummy);
+        x_diff = std::modf(logmap1_diff, &dummy);
+        y_diff = std::modf(logmap2_diff, &dummy);
     }
 
-    for (int i = 0; i < BSIZE; i++)
+    for (int i = 0; i < 40; i++)
     {
 #pragma HLS PIPELINE off
-    	long double logmap1_perm = (long double) uu_perm * x_perm * (1.0 - x_perm);
-    	long double logmap2_perm = (long double) uu_perm * y_perm - uu_perm * powf(y_perm,2);
+        logmap1_diff = uu_diff * x_diff * (1.0 - x_diff);
+        logmap2_diff = uu_diff2 * y_diff - uu_diff2 * std::pow(y_diff,2.0f);
 
-    	x_perm = modf((double)logmap1_perm, &dummy);
-    	y_perm = modf((double)logmap2_perm, &dummy);
+        x_diff = std::modf(logmap1_diff, &dummy);
+        y_diff = std::modf(logmap2_diff, &dummy);
 
-        long double logmap1_diff = (long double) uu_diff * x_diff * (1.0 - x_diff);
-        long double logmap2_diff = (long double) uu_diff * y_diff - uu_diff * powf(y_diff,2);
+        map_diff = std::fabs(x_diff-y_diff);
+        p = map_diff*std::pow(10.0f,5.0f);
+        l_diff = std::remainder(p,256.0f);
+        //uint8_t cipher = l_diff ^ (*((uint8_t *)Image+i));
 
-        x_diff = modf((double)logmap1_diff, &dummy);
-        y_diff = modf((double)logmap2_diff, &dummy);
-
-        long double map_diff = abs(modf((double)logmap1_diff-(double)logmap2_diff,&dummy));
-
-        uint8_t l_diff = ((long long int)(map_diff*powf(10,5))%256);
-        uint8_t cipher = l_diff ^ (*((uint8_t *)Image+i));
-
-	    out_data_axis outHash;
-	    outHash.data.perm_map.f = abs(modf((double)logmap1_perm-(double)logmap2_perm,&dummy));
-	    outHash.data.diff_map.i = l_diff;
-	    outHash.last = (i == (BSIZE - 1)) ? 1 : 0;
+	    outHash.data = l_diff;
+	    outHash.last = (i == (40 - 1)) ? 1 : 0;
 	    outHash.strb = 0xff;
 	    outHash.keep = 0xff;
         output_stream.write(outHash);
@@ -127,11 +113,4 @@ void logmap(
  }
 
 
-/*
 
- int dx;
- for (dx = 0; dx < 4; dx++)
-  {
-
-  }
-*/

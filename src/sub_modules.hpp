@@ -1,23 +1,9 @@
 #ifndef SUB_MODULES_HPP
 #define SUB_MODULES_HPP
-#include <stdint.h>
+
 #include<hls_stream.h>
 #include<ap_axi_sdata.h>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <iomanip>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <ap_int.h>
-
-#include "xf_security/sha224_256.hpp"
-#include"sub_modules.hpp"
-#include <fstream>
-#include "hls_math.h"
-
+#include<ap_int.h>
 
 #define dt 10
 
@@ -48,10 +34,7 @@ typedef union {
 }maps;
 
 
-typedef struct{
-  maps perm_map;
-  maps diff_map;
-}outStream;
+typedef uint32_t outStream;
 
 
 typedef ap_axis<64,1,1,1> in_data_axis;
@@ -75,12 +58,9 @@ void set_hash_stream(
   hls::stream<bool>& end_hash_strm);
 
 void logmap(
-  float& m_perm,
   float& m_diff,
   out_stream &output_stream,
-  int u_perm,
   int u_diff,
-  int u_dt,
   uint64_t* Image);
 
 
