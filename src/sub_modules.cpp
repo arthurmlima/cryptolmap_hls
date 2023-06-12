@@ -104,7 +104,7 @@ void logmap(
         //uint8_t cipher = l_diff ^ (*((uint8_t *)Image+i));
 
 	    outHash.data = l_diff;
-	    outHash.last = (i == (40 - 1)) ? 1 : 0;
+	    outHash.last = (i == (BSIZE - 1)) ? 1 : 0;
 	    outHash.strb = 0xff;
 	    outHash.keep = 0xff;
         output_stream.write(outHash);

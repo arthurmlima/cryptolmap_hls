@@ -39,6 +39,7 @@ create_clock -period 11 -name default
 csim_design -argv {10}
 csynth_design
 export_design -rtl verilog -format ip_catalog -output ../hw/ip_repo/
+exec rm -Rf ../hw/ip_repo/*
 exec unzip ../hw/ip_repo/export.zip -d ../hw/ip_repo/
 
 exit
